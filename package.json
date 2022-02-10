@@ -11,6 +11,11 @@
     "*.{vue,js,ts}": "eslint --fix"
   },
   "dependencies": {
+    "@dicebear/avatars": "^4.10.2",
+    "@dicebear/collection": "^4.10.2",
+    "@multiavatar/multiavatar": "^1.0.7",
+    "chinese-random-name": "^1.0.0",
+    "crypto-js": "^4.1.1",
     "element-plus": "^2.0.1",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12",

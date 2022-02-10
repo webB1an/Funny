@@ -7,6 +7,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/dicebear-avatar',
+    name: 'DICEBEAR',
+    component: () => import('@/views/dicebear/index.vue')
+  },
+  {
+    path: '/multiavatar',
+    name: 'MULTIAVATAR',
+    component: () => import('@/views/multiavatar/index.vue')
   }
 ]
 
