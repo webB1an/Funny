@@ -27,6 +27,17 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/dicebear/index.vue')
       }
     ]
+  },
+  {
+    path: '/day-night',
+    component: Layout,
+    children: [
+      {
+        path: '',
+        name: 'DAYNIGHT',
+        component: () => import('@/views/dayNight/index.vue')
+      }
+    ]
   }
 ]
 

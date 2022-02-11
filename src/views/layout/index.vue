@@ -27,6 +27,14 @@
             DICEBEAR-AVATAR
           </el-link>
         </li>
+        <li>
+          <el-link
+            type="primary"
+            @click="handleJumptoMenu('/day-night')"
+          >
+            DAY-NIGHT
+          </el-link>
+        </li>
       </ul>
     </template>
     <template #footer>
