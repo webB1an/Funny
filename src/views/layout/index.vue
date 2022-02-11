@@ -29,6 +29,11 @@
         </li>
       </ul>
     </template>
+    <template #footer>
+      <div class="to-home">
+        <img src="../../assets/home.png" alt="" @click="handleToHome">
+      </div>
+    </template>
   </el-drawer>
 </template>
 
@@ -42,6 +47,11 @@ const isShowDrawer = ref(false)
 const handleJumptoMenu = (path: string) => {
   isShowDrawer.value = false
   router.push({ path })
+}
+
+const handleToHome = () => {
+  isShowDrawer.value = false
+  router.push('/')
 }
 
 const handlecheckKeyDown = (e: KeyboardEvent) => {
@@ -111,6 +121,14 @@ html {
 
   .menu-list {
     float: right;
+  }
+}
+
+.to-home {
+  cursor: pointer;
+
+  img {
+    width: 50px;
   }
 }
 </style>
