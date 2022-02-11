@@ -27,15 +27,6 @@
             DICEBEAR-AVATAR
           </el-link>
         </li>
-        <li>
-          <el-link
-            type="primary"
-            @click="handleJumptoMenu('/multiavatar')"
-          >
-            MULTIAVATAR
-          </el-link>
-        </li>
-        <li></li>
       </ul>
     </template>
   </el-drawer>
