@@ -1,4 +1,4 @@
 avataaars.ts
 spriteCollection.tsx
-/src/views/multiavatar
-/src/views/home copy
+/src/views/multiavatar/*.vue
+/src/views/home copy/*

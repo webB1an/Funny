@@ -1,22 +1,32 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 
+import Layout from '@/views/layout/index.vue'
 import Home from '@/views/home/index.vue'
+// import Avatar from '@/views/avatar/index.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    component: Layout,
+    redirect: '/home',
+    children: [
+      {
+        path: '/home',
+        name: 'Home',
+        component: Home
+      }
+    ]
   },
   {
     path: '/dicebear-avatar',
-    name: 'DICEBEAR',
-    component: () => import('@/views/dicebear/index.vue')
-  },
-  {
-    path: '/multiavatar',
-    name: 'MULTIAVATAR',
-    component: () => import('@/views/multiavatar/index.vue')
+    component: Layout,
+    children: [
+      {
+        path: '',
+        name: 'DICEBEAR',
+        component: () => import('@/views/dicebear/index.vue')
+      }
+    ]
   }
 ]
 
